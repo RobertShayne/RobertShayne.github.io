@@ -5,5 +5,5 @@ statusText.addEventListener('click',function(){
 });
 
 window.onload = function() {
-  statusText.textContent = "clicked";
+  statusText.textContent = "Click me now!!";
 };
