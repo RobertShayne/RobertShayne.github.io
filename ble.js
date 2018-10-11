@@ -11,7 +11,7 @@
 			})
 			.then(device =>{
 				return device.name;
-			})
+			});
 		}
 	}
 })();
