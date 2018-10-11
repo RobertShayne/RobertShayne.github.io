@@ -10,9 +10,11 @@
 				acceptAllDevices: true
 			})
 			.then(device =>{
-				return device.name;
+				
 			});
-			return "failed";
+		}
+		test(){
+			return
 		}
 	}
 })();
