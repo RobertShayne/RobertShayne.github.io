@@ -6,12 +6,13 @@
 			this._characteristics = new Map();
 		}
 		connect(){
-			return navigator.bluetooth.requestDevice({
+			navigator.bluetooth.requestDevice({
 				acceptAllDevices: true
 			})
 			.then(device =>{
 				return device.name;
 			});
+			return "failed";
 		}
 	}
 })();
