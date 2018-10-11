@@ -10,7 +10,7 @@
 				acceptAllDevices: true
 			})
 			.then(device =>{
-				return device.Name
+				return device.Name;
 			})
 		}
 	}
