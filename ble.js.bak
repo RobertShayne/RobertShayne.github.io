@@ -14,7 +14,7 @@
 			});
 		}
 		test(){
-			return "test result"
+			return "test result";
 		}
 	}
 })();

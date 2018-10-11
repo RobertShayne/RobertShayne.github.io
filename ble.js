@@ -17,4 +17,6 @@
 			return "test result";
 		}
 	}
+	
+	window.bleScanner = new BLEscanner();
 })();
