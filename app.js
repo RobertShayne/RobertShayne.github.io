@@ -1,11 +1,11 @@
 var statusText = document.querySelector('#statusText');
 
 statusText.addEventListener('click',function(){
-	bleScanner.connect();
+	bleScanner.channelFM();
 	statusText.textContent = 'clicked!';
 });
 
 window.onload = function() {
-	
+	bleScanner.connect();
 	statusText.textContent = "Click me now!!!";
 };
