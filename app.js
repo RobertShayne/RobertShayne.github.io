@@ -6,6 +6,6 @@ statusText.addEventListener('click',function(){
 });
 
 window.onload = function() {
-  statusText.textContent = "Click me now!!";
-  bleScanner.connect();
+	bleScanner.connect();
+	statusText.textContent = "Click me now!!!";
 };
