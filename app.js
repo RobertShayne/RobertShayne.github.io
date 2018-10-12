@@ -1,11 +1,15 @@
-var statusText = document.querySelector('#statusText');
+var ConnectBut = document.querySelector('#ConnectBut');
+var FmBut = document.querySelector('#FmBut');
 
-statusText.addEventListener('click',function(){
+ConnectBut.addEventListener('click',function(){
+	bleScanner.connect();
+});
+
+FmBut.addEventListener('click',function(){
 	bleScanner.channelFM();
-	statusText.textContent = 'clicked!';
 });
 
 window.onload = function() {
-	bleScanner.connect();
+	
 	statusText.textContent = "Click me now!!!";
 };
