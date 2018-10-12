@@ -23,10 +23,10 @@
 						return Promise.all([
 							this._cacheCharacteristic(service, 'Tx', '49535343-1E4D-4BD9-BA61-23C647249616'),
 							this._cacheCharacteristic(service, 'Rx', '49535343-8841-43F4-A8D4-ECBE34729BB3'),
-						]);
+						])
 					})
 				]);
-			});
+			})
 		}
 		channelFM()
 		{
