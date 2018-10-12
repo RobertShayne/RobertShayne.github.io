@@ -27,7 +27,7 @@
 		}
 		channelFM()
 		{
-			this._writeCharacteristicValue('Tx',Uint8Array.of(0x03,0x02));
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x02]));
 		}
 		/* Utils */
 		
