@@ -3,7 +3,7 @@
 <body>
 <h1>Hello World</h1>
 <button type="button" id="ConnectBut">Connect</button>
-<button type="button" id="statusText">Fm</button>
+<button type="button" id="FmBut">Fm</button>
 <script src="ble.js"></script>
 <script src="app.js"></script>
 </body>
