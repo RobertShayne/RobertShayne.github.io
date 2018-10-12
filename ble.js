@@ -8,7 +8,8 @@
 		connect(){
 			navigator.bluetooth.requestDevice({
 				filters: [{
-					services: ['49535343-fe7d-4ae5-8fa9-9fafd205e455']
+					services: [
+					'49535343-fe7d-4ae5-8fa9-9fafd205e455','97466293158601902871351335117237118037']
 					}]
 			})
 			.then(device =>{
