@@ -11,6 +11,5 @@ FmBut.addEventListener('click',function(){
 });
 
 window.onload = function() {
-	
 	statusText.textContent = "Click me now!!!";
 };

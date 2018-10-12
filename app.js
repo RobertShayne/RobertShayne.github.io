@@ -3,7 +3,7 @@ var FmBut = document.querySelector('#FmBut');
 var statusText = document.querySelector('#statusText');
 
 ConnectBut.addEventListener('click',function(){
-	bleScanner.connect();
+	statusText.textContent = bleScanner.connect();
 });
 
 FmBut.addEventListener('click',function(){
