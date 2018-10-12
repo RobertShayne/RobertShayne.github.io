@@ -22,7 +22,7 @@
 					this._cacheCharacteristic(service, 'Rx', '49535343-8841-43F4-A8D4-ECBE34729BB3');
 				};
 				
-				return ''
+				return '';
 			})
 		}
 		channelFM()
