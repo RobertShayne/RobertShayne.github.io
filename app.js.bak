@@ -3,11 +3,23 @@ var FmBut = document.querySelector('#FmBut');
 var statusText = document.querySelector('#statusText');
 
 ConnectBut.addEventListener('click',function(){
-	bleScanner.connect();
+	statusText.textContent = bleScanner.connect();
 });
 
 FmBut.addEventListener('click',function(){
 	bleScanner.channelFM();
+});
+AmBut.addEventListener('click',function(){
+	bleScanner.channelAM();
+});
+DabBut.addEventListener('click',function(){
+	bleScanner.channelDAB();
+});
+AuxBut.addEventListener('click',function(){
+	bleScanner.channelAUX();
+});
+BtBut.addEventListener('click',function(){
+	bleScanner.channelBR();
 });
 
 window.onload = function() {

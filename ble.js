@@ -24,9 +24,26 @@
 			});
 			return this.device.name;
 		}
+		
 		channelFM()
 		{
 			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x02]));
+		}
+		channelAM()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x03]));
+		}
+		channelDAB()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x01]));
+		}
+		channelAUX()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x04]));
+		}
+		channelBT()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x05]));
 		}
 		/* Utils */
 		

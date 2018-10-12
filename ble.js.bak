@@ -8,7 +8,7 @@
 		connect(){
 			navigator.bluetooth.requestDevice({
 				filters: [{namePrefix: 'LE'}],
-				
+				optionalServices: ['49535343-fe7d-4ae5-8fa9-9fafd205e455']
 			})
 			.then(device =>{
 				this.device = device;
@@ -24,7 +24,24 @@
 			});
 			return this.device.name;
 		}
+		
 		channelFM()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x02]));
+		}
+		channelAM()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x02]));
+		}
+		channelDAB()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x02]));
+		}
+		channelAUX()
+		{
+			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x02]));
+		}
+		channelBT()
 		{
 			this._writeCharacteristicValue('Tx',new Uint8Array([0x03,0x02]));
 		}
