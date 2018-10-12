@@ -1,7 +1,7 @@
 var statusText = document.querySelector('#statusText');
 
 statusText.addEventListener('click',function(){
-	statusText.textContent = bleScanner.test();
+	statusText.textContent = bleScanner.connect();
 });
 
 window.onload = function() {

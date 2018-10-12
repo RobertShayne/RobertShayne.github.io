@@ -10,11 +10,8 @@
 				acceptAllDevices: true
 			})
 			.then(device =>{
-				
+				return device.name;
 			});
-		}
-		test(){
-			return "test result";
 		}
 	}
 	
