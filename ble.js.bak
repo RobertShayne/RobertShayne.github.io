@@ -9,7 +9,6 @@
 			navigator.bluetooth.requestDevice({
 				filters: [{
 					namePrefix: 'LE']
-					}]
 			})
 			.then(device =>{
 				this.device = device;

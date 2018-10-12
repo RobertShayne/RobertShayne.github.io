@@ -7,8 +7,7 @@
 		}
 		connect(){
 			navigator.bluetooth.requestDevice({
-				filters: [{
-					namePrefix: 'LE']
+				filters: [namePrefix: 'LE']
 			})
 			.then(device =>{
 				this.device = device;
